@@ -3,7 +3,8 @@
 #!/bin/bash
 #与后面endtime结合现实脚本安装时间
 start_time=$(date +%s)
- 
+begin_time=$(date +%m)
+
 #安装mysql依赖包，如果没有，后面可能报错
 yum -y install gcc gcc-c++ openssl openssl-devel libaio libaio-devel  ncurses  ncurses-devel  >> /dev/null
  
